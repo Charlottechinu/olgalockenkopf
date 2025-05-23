@@ -23,10 +23,18 @@
       margin-left: 10px;
     }
     .header-image {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .header-image {
+    height: auto;
+  }
+}
+
     .container {
       max-width: 800px;
       margin: 40px auto;
