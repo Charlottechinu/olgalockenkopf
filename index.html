@@ -65,7 +65,23 @@
 
     .nav a:hover {
       text-decoration: underline;
-    }
+    @media (max-width: 600px) {
+  .nav {
+    position: static;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .nav a {
+    font-size: 1.2em;
+  }
+
+  .overlay {
+    padding-top: 60px;
+  }
+}
+
   </style>
 </head>
 <body>
