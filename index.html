@@ -6,27 +6,82 @@
   <title>Olga Lockenkopf</title>
   <style>
     body {
+      margin: 0;
+      padding: 0;
+      background: url("startbild.jpg") no-repeat center center fixed;
+      background-size: cover;
       font-family: Arial, sans-serif;
-      max-width: 600px;
-      margin: 50px auto;
-      padding: 0 20px;
-      line-height: 1.5;
-      color: #222;
-      text-align: center;
+      color: white;
     }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
     h1 {
-      font-weight: normal;
-      margin-bottom: 10px;
+      font-size: 2.5em;
+      margin: 0;
     }
+
     p {
-      margin-top: 0;
-      margin-bottom: 20px;
+      font-size: 1.2em;
+      margin: 10px 0 40px;
+    }
+
+    .lang {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 0.9em;
+    }
+
+    .lang a {
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    .nav {
+      position: absolute;
+      top: 50%;
+      left: 40px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Olga Lockenkopf</h1>
-  <p>Contemporary composer</p>
-  <p>This website is currently under construction.</p>
+  <div class="lang">
+    <strong>EN</strong> | <a href="index-de.html">DE</a>
+  </div>
+
+  <div class="nav">
+    <a href="biography.html">Biography</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="overlay">
+    <h1>Olga Lockenkopf</h1>
+    <p>Contemporary composer & interdisciplinary artist</p>
+  </div>
 </body>
 </html>
